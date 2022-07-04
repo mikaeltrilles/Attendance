@@ -1,20 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Attendance </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/images/classroom.jpg" alt=""></ion-img>
+      <ion-card-subtitle>
+        Gestion de l'assiduité des étudiants
+      </ion-card-subtitle>
+      <ion-card-title>Attendance</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Attendance est une application de gestion de l'assiduité des étudiants
+      </p>
+      <a routerLink="/roster" routerDirection="forward">Voir la liste</a>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
