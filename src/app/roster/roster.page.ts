@@ -53,6 +53,4 @@ export class RosterPage implements OnInit {
     });
     await actionSheet.present();
   }
-
-
 }

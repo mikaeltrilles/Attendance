@@ -29,7 +29,7 @@ export interface Student {
   getAll(){
     return this.mockStudents;
   }
-
+  
 }
 
 
