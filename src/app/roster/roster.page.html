@@ -11,6 +11,9 @@
       <ion-label>{{student.firstName}}  {{student.lastName}}</ion-label>
       <ion-icon *ngIf="student.status==='present'" slot="end" name="eye"></ion-icon>
       <ion-icon *ngIf="student.status==='absent'" slot="end" name="eye-off-outline"></ion-icon>
+      <ion-buttons (click)="presentActionSheet(student)">
+        <ion-icon name="cog"></ion-icon>
+      </ion-buttons>
     </ion-item>
   </ion-list>
 </ion-content>
