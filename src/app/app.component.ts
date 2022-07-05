@@ -24,7 +24,7 @@ export class AppComponent {
       title: 'Etudiants',
       url: '/roster',
       icon: 'people'
-    },
+    }
   ];
   constructor() {}
 }

@@ -11,11 +11,17 @@
     <ion-item *ngFor="let student of students">
       <ion-icon slot="start" name="person"></ion-icon>
       <ion-label>{{student.firstName}} {{student.lastName}}</ion-label>
+
+
+
       <ion-icon *ngIf="student.status==='present'" slot="end" name="eye"></ion-icon>
       <ion-icon *ngIf="student.status==='absent'" slot="end" name="eye-off-outline"></ion-icon>
-      <ion-buttons (click)="presentActionSheet(student)">
+      <ion-buttons slot="end" (click)="presentActionSheet(student)">
         <ion-icon name="cog"></ion-icon>
       </ion-buttons>
+      <ion-button slot="end" href="/student-info/{{student.id}}" routerDirection="forward">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -29,6 +29,10 @@ export interface Student {
   getAll(){
     return this.mockStudents;
   }
+  
+  // getOne(id: string){
+  //   return this.mockStudents.find(student => student.id === id);
+  // }
 }
 
 

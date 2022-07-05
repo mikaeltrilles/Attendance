@@ -41,7 +41,6 @@ export class RosterPage implements OnInit {
         }
       },{
         text: 'Supprimer',
-        // role: 'destructive',
         icon: 'trash',
         handler: () => {
           this.presentDeleteAlert(student);

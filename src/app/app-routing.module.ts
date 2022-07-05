@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'roster',
     loadChildren: () => import('./roster/roster.module').then( m => m.RosterPageModule)
   },
+  {
+    path: 'student-info/:id',
+    loadChildren: () => import('./student-info/student-info.module').then( m => m.StudentInfoPageModule)
+  },
+  {
+    path: 'student-info',
+    loadChildren: () => import('./student-info/student-info.module').then( m => m.StudentInfoPageModule)
+  },
 ];
 
 @NgModule({
