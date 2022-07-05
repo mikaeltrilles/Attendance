@@ -22,14 +22,13 @@ export interface Student {
     {id: '2', firstName: 'Pierre', lastName: 'Afeu'},
     {id: '3', firstName: 'Harry', lastName: 'Covert',status: 'absent'},
     {id: '4', firstName: 'Corinne', lastName: 'Tigoute'},
-    {id: '5', firstName: 'Mélisine', lastName: 'Enfaillite'}
+    {id: '5', firstName: 'Mélusine', lastName: 'Enfaillite'}
   ]
 
   constructor() { }
   getAll(){
     return this.mockStudents;
   }
-  
 }
 
 
